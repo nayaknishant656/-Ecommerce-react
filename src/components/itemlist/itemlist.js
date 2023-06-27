@@ -27,13 +27,6 @@ const UsingFetch = ({ handleClick }) => {
   return (
     <>
       <section id="card_parent">
-        <ul>
-          <li onClick={() => setFilter(users)}>all</li>
-          <li onClick={() => filterProduct("men's clothing")}>Mens Wearing</li>
-          <li onClick={() => filterProduct("electronics")}>Electronics</li>
-          <li onClick={() => filterProduct("jewelery")}>Jewelery</li>
-          <li onClick={() => filterProduct("women's clothing")}>Women's</li>
-        </ul>
         <div className="card_container_parent">
           {filter ? (
             filter.map((item) => (
