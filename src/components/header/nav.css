@@ -3,55 +3,57 @@
     padding: 0;
     box-sizing: border-box;
 }
-header{
+
+header {
     height: 58px;
     width: 100%;
     position: relative;
     background-color: white;
 }
-.box-parent
-{
+
+.box-parent {
     display: flex;
     align-items: center;
     padding: 0px 2%;
     height: inherit;
     justify-content: space-between;
 }
-.centre-nav-parent
-{
+
+.centre-nav-parent {
     position: relative;
     left: 100px;
 }
-.centre-nav-parent img
-{
+
+.centre-nav-parent img {
     height: 87px;
     top: 4px;
     position: relative;
     top: 22;
     transform: rotate(16deg);
 }
-.right-nav-parent
-{
+
+.right-nav-parent {
     display: flex;
 }
-.right-nav-parent > ul
-{
+
+.right-nav-parent>ul {
     display: flex;
 }
-.right-nav-parent > ul > li
-{
+
+.right-nav-parent>ul>li {
     list-style: none;
     margin: 0px 10px;
 }
-.right-nav-parent > ul > li > a
-{
+
+.right-nav-parent>ul>li>a {
     text-decoration: none;
 }
-.right-nav-parent > h2 {
+
+.right-nav-parent>h2 {
     margin: 0px 12px;
 }
-.cart-size
-{
+
+.cart-size {
     position: relative;
     top: -35px;
     background: #ff5050;
@@ -62,4 +64,59 @@ header{
     border-radius: 49%;
     left: 24px;
     font-size: 12px;
+}
+.icon-right
+{
+    margin: 0px 12px;
+    position: absolute;
+    top: 11px;
+}
+
+@media only screen and (max-width: 600px) {
+    .box-parent {
+        justify-content: normal;
+      }
+      
+      #navsidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 95vw;
+        height: 100vh;
+        z-index: 99;
+        padding: 42px 6%;
+        opacity: 0;
+        background: rgba(0, 0, 0, 0.65);
+        color: white;
+        backdrop-filter: blur(8px);
+        transform: translateX(100%);
+        transition: all 0.3s;
+      
+        > ul {
+          display: flex;
+          flex-direction: column;
+          width: 90vw;
+          color: white;
+      
+          > li {
+            list-style: none;
+            font-size: 1.6rem;
+            padding: 6px 0;
+            margin: 5px 0;
+            color: #fff;
+      
+            > a {
+              text-decoration: none;
+              color: #fff;
+            }
+          }
+        }
+      }
+      
+      .icon-right {
+        position: absolute;
+        right: 5px;
+      }
+   
 }
