@@ -13,16 +13,101 @@
 #card_parent{
     display: flex;
 }
-ul
+#card_parent > ul
+{
+    width: 250x;
+    padding: 0px 7%;
+    width: 250px;
+    transition: all 1s ease-in-out 0s;
+}
+
+#sidenav
 {
     padding: 0px 5%;
     list-style-type: none;
 }
-li {
+#sidenav > li {
     margin: 10px 0px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
 }
-li > a 
+#card_parent > ul > li > a 
 {
     text-decoration: none;
     /* border: solid red 1px; */
+}
+.side_poster
+{
+    position: fixed;
+    /* left: -5px; */
+    background: black;
+    z-index: 999;
+    height: 40px;
+    display: flex;
+    bottom: 0;
+    /* border: solid green; */
+    width: 91%;
+    transition: all 1s ease-in-out 0s;
+    /* top: 5vh; */
+    /* transform: rotate(90deg); */
+}
+
+.Filter_parent
+{
+    width: 20%;
+}
+
+.Filter_parent > p
+{
+    color: white;
+    font-size: 13px;
+    padding: 5px;
+    height: 30px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+#card_parent > ul
+{
+    overflow: hidden;
+    padding: 0px 0%;
+    width: 0px;
+    transition: all 1s ease-in-out 0s;
+}
+.side_poster
+{
+    background-color: black;
+}
+.Filter_parent
+{
+    width: 50%;
+}
+#sidenav2
+{
+    width: 250px;
+    background: rgba(0, 0, 0, 0.33);
+    color: black;
+    padding: 0px 5%;
+
+}
+
+#sidenav2 > li
+{
+    margin: 10px 0px;
+    text-align: center;
+    padding: 10px 0px;
+    border-bottom: solid 1px rgb(255, 255, 255);
+    font-weight: 700;
+    list-style: none;
+}
+
+
+#sidenav2 > ul > li
+{
+    color: black;
+    font-weight: 300;
+}
+
+
 }
