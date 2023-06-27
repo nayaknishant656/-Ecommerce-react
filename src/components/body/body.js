@@ -94,7 +94,7 @@ export default function Body({handleClick}) {
                   <li>{users.category}</li>
                 </ul>
               </div>
-              <h2>{users.price + '$'}</h2>
+              <h2>{users.price + '₹'}</h2>
               <p>Cash On Delivery Available/All over India</p>
               <div className='buttons-cart'>
               <button onClick={()=>handleClick(users)} >Add to Cart</button>
