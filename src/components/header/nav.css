@@ -78,45 +78,64 @@ header {
       }
       
       #navsidebar {
-        position: fixed;
-        top: 0;
-        right: 0;
         display: block;
-        width: 95vw;
-        height: 100vh;
         z-index: 99;
+        right: 0;
         padding: 42px 6%;
         opacity: 0;
-        background: rgba(0, 0, 0, 0.65);
-        color: white;
         backdrop-filter: blur(8px);
         transform: translateX(100%);
-        transition: all 0.3s;
+        top: 0px;
+        justify-content: start;
+        color: white;
+        position: fixed;
+        transition: all 1s cubic-bezier(0.26, 0.98, 0.36, 0.97);
+        height: 100vh;
+        width: 100vw;
+        background: #000000a1;
+      }
       
-        > ul {
-          display: flex;
-          flex-direction: column;
-          width: 90vw;
-          color: white;
+      #navsidebar > ul {
+        display: block;
+        flex-direction: column;
+        transition: all 1s ease-in-out 0s;
+        width: 90vw;
+        color: white;
+      }
       
-          > li {
-            list-style: none;
-            font-size: 1.6rem;
-            padding: 6px 0;
-            margin: 5px 0;
-            color: #fff;
+      #navsidebar > ul > li {
+        list-style: none;
+        /* border: solid 1px #817d7d47; */
+        text-align: left;
+        font-size: 34px;
+        padding: 6px 0px;
+        color: rgb(255, 255, 255);
+        margin: 5px 0px;
+      }
       
-            > a {
-              text-decoration: none;
-              color: #fff;
-            }
-          }
-        }
+      #navsidebar > ul > li > a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+      }
+      
+      .cart-size {
+        /* position: relative; */
+        /* top: 84px; */
+        /* background: #ff5050; */
+        /* height: 24px; */
+        /* padding: 3px; */
+        /* color: black; */
+        /* height: 3px; */
+        /* width: 16px; */
+        /* border-radius: 49%; */
+        /* left: 36px; */
+        /* font-size: 14px; */
       }
       
       .icon-right {
         position: absolute;
         right: 5px;
       }
+      
    
 }
