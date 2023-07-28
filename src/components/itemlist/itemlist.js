@@ -48,7 +48,8 @@ const UsingFetch = ({ handleClick }) => {
           </div>
         </div>
         <ul id="sidenav2">
-          <li onClick={() => setFilter(users)}>all</li>
+           <h4>Category</h4>
+          <li onClick={() => setFilter(users)}>All Products</li>
           <li onClick={() => filterProduct("men's clothing")}>Mens Wearing</li>
           <li onClick={() => filterProduct("electronics")}>Electronics</li>
           <li onClick={() => filterProduct("jewelery")}>Jewelery</li>

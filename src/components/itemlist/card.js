@@ -6,10 +6,10 @@ import Tshirt from "../body/img/background-images/crew_front.png";
 const card = ({ item, handleClick }) => {
   const { id, title, author, price, image, rating } = item;
   const Id = [rating];
-  // const mystyle = {
-  //   height: "190px",
-  //   width: "145px",
-  // };
+  const mystyle = {
+    height: "190px",
+    width: "145px",
+  };
   return (
        
          <div className="cards">
