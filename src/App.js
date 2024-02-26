@@ -11,8 +11,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 // import ProductDetail from './ProductDetail';
 import Aboutus from './Aboutus';
 
-
-
 function App() {
   const [cart , setCart] = useState([]);
   const handleClick = (item)=>{
@@ -31,9 +29,6 @@ function App() {
     setCart(current => [...cart, item]);
     console.log(cart)
 	}
-
-
-  
 
   return (
     <> 
